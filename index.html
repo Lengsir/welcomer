@@ -114,7 +114,7 @@ document.write(unescape("%3C%21DOCTYPE%20html%3E%0A%3C%21--%20saved%20from%20url
         }
 
         let totalDaysOld = Math.floor(timeOld / msPerDay);
-        let daysOld = totalDaysOld;
+        let daysOld = totalDaysOld+1;
 
         for (let year = birthDay.getFullYear(); year < birthDay.getFullYear() + yearsOld; year++) {
             daysOld -= isLeapYear(year) ? 366 : 365;
